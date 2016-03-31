@@ -1,0 +1,176 @@
+@-moz-viewport { width: device-width; scale: 1; }
+@-ms-viewport { width: device-width; scale: 1; }
+@-o-viewport { width: device-width; scale: 1; }
+@-webkit-viewport { width: device-width; scale: 1; }
+@viewport { width: device-width; scale: 1; }
+
+html {
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  box-sizing: border-box;
+  font: normal 100%/1.3 "Noto Sans", sans-serif;
+  line-height: 1;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+}
+
+.wrapper {
+  max-width: 100%;
+  background-color: #e5c30a;
+  padding: 1rem;
+  overflow: hidden;
+  margin: 0;
+}
+
+.section-body {
+  padding-left: 1rem;
+  max-width: 80%;
+}
+
+.section-body div strong {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.section-body p {
+  margin: 0;
+  padding-top: .25rem;
+  line-height: 1.25;
+}
+
+.img-flex {
+  width: 100%;
+  display: block;
+}
+
+.section-letter {
+  float: left;
+  width: 50%;
+}
+
+.section-icon {
+  float: left;
+  width: 50%;
+}
+
+@media only screen and (min-width: 25em) {
+
+  .wrapper {
+    padding: .25rem;
+    font-size: 100%;
+    line-height: 1.3;
+    margin: auto;
+  }
+
+  .section-body {
+    max-width: 100%;
+    margin-right: 0;
+  }
+
+  .section-body strong{
+    padding: 0;
+  }
+
+  .section-body p {
+    padding-bottom: .5rem;
+  }
+
+  .section-letter {
+
+    padding: 1rem;
+    width: 43%;
+  }
+
+  .section-icon {
+    margin-right: auto;
+    padding: 1rem;
+    width: 43%;
+  }
+}
+
+@media only screen and (min-width: 38em) {
+
+  .wrapper {
+    font-size: 110%;
+    line-height: 1.4;
+  }
+
+  .section-letter {
+    width: 20%;
+  }
+
+  .section-icon {
+    float: right;
+    right: 5rem;
+    width: 20%;
+  }
+
+  .section-body {
+    width: 55%;
+    top: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+  }
+
+}
+
+@media only screen and (min-width: 60em) {
+
+  .wrapper {
+    font-size: 120%;
+    line-height: 1.5;
+
+  }
+
+  .section-body {
+    top:auto;
+  }
+
+  .section-icon {
+    width: 16%;
+  }
+
+  .section-letter {
+    width: 16%;
+  }
+}
+
+@media only screen and (min-width: 90em) {
+
+  .wrapper {
+    position: absolute;
+    font-size: 130%;
+    line-height: 1.5;
+    width: 100%;
+    height: 10rem;
+  }
+
+  .section-letter {
+    position:relative;
+    left: 10%;
+    width: 10%;
+  }
+
+  .section-icon {
+    position:relative;
+    right: 10%;
+    width: 10%;
+    padding-right: 1rem;
+  }
+
+  .section-body {
+    position: relative;
+    align-content: center;
+    top: 2rem;
+    width: 45%;
+  }
+}
